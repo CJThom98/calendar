@@ -27,15 +27,15 @@ var loadTasks = function() {
 
     if (!tasks) {
         tasks = {
-            900: [],
-            1000: [],
-            1100: [],
-            1200: [],
-            1300: [],
-            1400: [],
-            1500: [],
-            1600: [],
-            1700: []
+            9: [],
+            10: [],
+            11: [],
+            12: [],
+            13: [],
+            14: [],
+            15: [],
+            16: [],
+            17: []
         };
     }
 
@@ -49,3 +49,19 @@ var loadTasks = function() {
 var saveTasks = function() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
 };
+
+$("#task-form-modal").on("show.bs.modal", function() {
+    $("#modalTaskDescription").val("");
+});
+
+$("#task-form-modal").on("shown.bs.modal", function() {
+    $("#modalTaskDescription").trigger("focus");
+});
+
+$("#task-form-modal .btn-primary").click(function() {
+    var taskText = $("#modalTaskDescription").val();
+
+    if(taskText) {
+
+    }
+})
