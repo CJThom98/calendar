@@ -41,3 +41,18 @@ $(".btn").click(function () {
     console.log(areaText);
     localStorage.setItem("event" + id, areaText);
 });
+
+function colorEffects() {
+    for (i = 9; i <= 17; i++) {
+
+        if (i < thisHour) {
+            $("#" + i).addClass("past");
+        } else if (i > thisHour) {
+            $("#" + i).addClass("future");
+        } else {
+            $("#" + i).addClass("present");
+        }
+    }
+};
+
+loadEvents();
