@@ -14,4 +14,5 @@ console.log(thisHour);
 var loadEvents = function () {
     var event9 = (localStorage.getItem("event9"));
     var event10 = (localStorage.getItem("event10"));
+    var event11 = (localStorage.getItem("event11"));
 }
