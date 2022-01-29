@@ -21,4 +21,16 @@ var loadEvents = function () {
     var event15 = (localStorage.getItem("event15"));
     var event16 = (localStorage.getItem("event16"));
     var event17 = (localStorage.getItem("event17"));
-}
+
+    $("#9").val(event9)
+    $("#10").val(event10)
+    $("#11").val(event11)
+    $("#12").val(event12)
+    $("#13").val(event13)
+    $("#14").val(event14)
+    $("#15").val(event15)
+    $("#16").val(event16)
+    $("#17").val(event17)
+
+    colorEffects();
+};
