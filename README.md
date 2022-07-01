@@ -1,4 +1,4 @@
-# calendar
+# Work Day Hourly Calendar Planner
 
 ## Description
 This application will allow the user to add and track tasks through out their work day
